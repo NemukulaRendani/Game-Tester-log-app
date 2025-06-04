@@ -1,5 +1,6 @@
 package vcmsa.ci.gametesterlogapp
 
+import android.content.Intent
 import android.media.Image
 import android.os.Bundle
 import android.widget.Button
@@ -33,9 +34,10 @@ class MainActivity : AppCompatActivity() {
 
 
         startButton.setOnClickListener {
-            var intent (this,GameTesterLogApp::class.java)
+            val intent = Intent(this, MainActivity2::class.java)
             startActivity(intent)
         }
+
 
         exitButton.setOnClickListener {
             finish()
